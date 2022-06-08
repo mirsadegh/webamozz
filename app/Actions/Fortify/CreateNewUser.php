@@ -3,12 +3,12 @@
 namespace App\Actions\Fortify;
 
 use App\Models\Team;
-use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Laravel\Jetstream\Jetstream;
+use Sadegh\User\Models\User;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -18,7 +18,7 @@ class CreateNewUser implements CreatesNewUsers
      * Create a newly registered user.
      *
      * @param  array  $input
-     * @return \App\Models\User
+     * @return \Sadegh\User\Models\User
      */
     public function create(array $input)
     {
@@ -43,7 +43,7 @@ class CreateNewUser implements CreatesNewUsers
     /**
      * Create a personal team for the user.
      *
-     * @param  \App\Models\User  $user
+     * @param  \Sadegh\User\Models\User  $user
      * @return void
      */
     protected function createTeam(User $user)

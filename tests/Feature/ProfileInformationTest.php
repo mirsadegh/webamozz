@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Jetstream\Http\Livewire\UpdateProfileInformationForm;
 use Livewire\Livewire;
+use Sadegh\User\Models\User;
 use Tests\TestCase;
 
 class ProfileInformationTest extends TestCase

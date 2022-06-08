@@ -2,11 +2,11 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Jetstream\Http\Livewire\UpdatePasswordForm;
 use Livewire\Livewire;
+use Sadegh\User\Models\User;
 use Tests\TestCase;
 
 class UpdatePasswordTest extends TestCase

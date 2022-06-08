@@ -1,19 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Auth\Customer;
+namespace Sadegh\User\Http\Controllers\Auth\Customer;
 
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Auth\Customer\LoginRegisterRequest;
 use App\Http\Services\Message\Email\EmailService;
 use App\Http\Services\Message\MessageService;
 use App\Http\Services\Message\SMS\SmsService;
-use App\Models\Otp;
-use App\Models\User;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Str;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Auth\Customer\LoginRegisterRequest;
+use Sadegh\User\Models\Otp;
+use Sadegh\User\Models\User;
 
 
 class LoginRegisterController extends Controller
@@ -21,7 +20,7 @@ class LoginRegisterController extends Controller
 
     public function loginRegisterForm()
     {
-        return view('customer.auth.login-register');
+        return view('User::Front.login-register');
     }
 
     public function loginRegister(LoginRegisterRequest $request)
@@ -107,7 +106,7 @@ class LoginRegisterController extends Controller
         {
             return redirect()->route('auth.customer.login-register-form')->withErrors(['id' => 'آدرس وارد شده نامعتبر میباشد']);
         }
-        return view('customer.auth.login-confirm', compact('token', 'otp'));
+        return view('User::Front.login-confirm', compact('token', 'otp'));
     }
 
 

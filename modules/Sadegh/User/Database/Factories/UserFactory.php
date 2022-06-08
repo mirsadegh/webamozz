@@ -1,12 +1,12 @@
 <?php
 
-namespace Database\Factories;
+namespace Sadegh\User\Database\Factories;
 
 use App\Models\Team;
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Laravel\Jetstream\Features;
+use Sadegh\User\Models\User;
 
 class UserFactory extends Factory
 {

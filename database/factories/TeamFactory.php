@@ -3,8 +3,8 @@
 namespace Database\Factories;
 
 use App\Models\Team;
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Sadegh\User\Models\User;
 
 class TeamFactory extends Factory
 {
