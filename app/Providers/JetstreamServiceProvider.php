@@ -31,6 +31,7 @@ class JetstreamServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Jetstream::ignoreRoutes();
         $this->configurePermissions();
 
         Jetstream::createTeamsUsing(CreateTeam::class);

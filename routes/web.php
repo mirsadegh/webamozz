@@ -1,10 +1,4 @@
-
-
 <?php
-
-
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -18,18 +12,31 @@
 */
 
 
-
 Route::get('/', function () {
     return view('index');
 });
 
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
+
+//Route::get('/verify-link/{user}', function () {
+//     if (request()->hasValidSignature()){
+//         return view('/');
+//     }
+//     return 'Faild';
+//})->name('verify-link');
+//
+//Route::get('/test', function () {
+//    return \URL::temporarySignedRoute('verify-link',now()->addMinutes(1),['user',1]);
+//});
+
+
+//Route::middleware([
+//    'auth:sanctum',
+//    config('jetstream.auth_session'),
+//    'verified'
+//])->group(function () {
+//    Route::get('/dashboard', function () {
+//        return view('dashboard');
+//    })->name('dashboard');
+//});

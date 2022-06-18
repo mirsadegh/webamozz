@@ -171,7 +171,7 @@
                 @else
                     <div class="login-register-btn ">
                         <div><a class="btn-login" href="login.html">ورود</a></div>
-                        <div><a class="btn-register" href="{{ route('auth.customer.login-register-form') }}">ثبت نام</a></div>
+                        <div><a class="btn-register" href="{{ route('auth.login-register-form') }}">ثبت نام</a></div>
                     </div>
                 @endauth
             </div>

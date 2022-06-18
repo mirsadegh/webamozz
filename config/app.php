@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Webamooz'),
 
     /*
     |--------------------------------------------------------------------------
@@ -182,6 +182,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Sadegh\User\Providers\UserServiceProvider::class,
+        Sadegh\Dashboard\Providers\DashboardServiceProvider::class,
 
         /*
          * Package Service Providers...
