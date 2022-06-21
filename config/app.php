@@ -183,6 +183,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Sadegh\User\Providers\UserServiceProvider::class,
         Sadegh\Dashboard\Providers\DashboardServiceProvider::class,
+        Sadegh\Category\Providers\CategoryServiceProvider::class,
 
         /*
          * Package Service Providers...

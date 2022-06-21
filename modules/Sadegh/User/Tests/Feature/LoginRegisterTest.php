@@ -67,7 +67,6 @@ class LoginRegisterTest extends TestCase
 
         $this->post(route('auth.login-register'),$data)
             ->assertRedirect(route('auth.login-register-form'));
-
     }
 
     public function test_login_confirm_form_send_token()

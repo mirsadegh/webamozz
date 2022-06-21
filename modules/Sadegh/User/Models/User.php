@@ -67,4 +67,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    protected static function newFactory()
+    {
+        return \Sadegh\User\Database\Factories\UserFactory::new();
+    }
 }
