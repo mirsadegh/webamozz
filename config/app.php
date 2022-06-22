@@ -184,7 +184,7 @@ return [
         Sadegh\User\Providers\UserServiceProvider::class,
         Sadegh\Dashboard\Providers\DashboardServiceProvider::class,
         Sadegh\Category\Providers\CategoryServiceProvider::class,
-
+        Sadegh\RolePermissions\Providers\RolePermissionServiceProvider::class,
         /*
          * Package Service Providers...
          */

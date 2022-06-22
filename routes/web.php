@@ -1,5 +1,7 @@
 <?php
 
+use Spatie\Permission\Models\Permission;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +16,20 @@
 
 Route::get('/', function () {
     return view('index');
+});
+Route::get('/test', function () {
+
+
+    // Permission::create(['name' => 'manage role-permissions']);
+    auth()->user()->givePermissionTo('manage role-permissions');
+    return auth()->user()->permissions;
+
+    // if(!auth()->user()->can('manage categories')){
+    //     return "your notprimted";
+    // }
+    // return "ok";
+
+
 });
 
 

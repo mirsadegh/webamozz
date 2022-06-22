@@ -684,6 +684,9 @@ textarea {
 .sidebar__nav .i-user__inforamtion a::before {
     content: '\e111';
 }
+.sidebar__nav .i-role-permissions a::before {
+    content: '\e084';
+}
 
 .sidebar__nav.is-active ul li {
     margin: 0 9px;
@@ -1431,6 +1434,7 @@ span.tagRemove:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding-right: 35px;
 }
 
 .ui-checkbox input {
@@ -1872,4 +1876,16 @@ span.tagRemove:hover {
 }
 .notification__box .title__noti{
     padding: 15px 0;
+}
+
+
+.pt-1{
+    padding-top: 10px;
+}
+.mt-2{
+    margin-top: 20px;
+}
+
+.invalid-feedback{
+    color: red;
 }

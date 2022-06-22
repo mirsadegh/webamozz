@@ -31,7 +31,8 @@
             "Database\\Seeders\\": "database/seeders/",
             "Sadegh\\User\\": "modules/Sadegh/User/",
             "Sadegh\\Dashboard\\": "modules/Sadegh/Dashboard/",
-            "Sadegh\\Category\\": "modules/Sadegh/Category/"
+            "Sadegh\\Category\\": "modules/Sadegh/Category/",
+            "Sadegh\\RolePermissions\\": "modules/Sadegh/RolePermissions/"
         }
     },
     "autoload-dev": {
